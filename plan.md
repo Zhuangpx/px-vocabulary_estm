@@ -56,7 +56,7 @@ vocabulary estm (default:en) = 英语词汇量估算
 
 取数据集然后去重。
 
-只有一个表：
+只有一个：
 
 ![database](./image/database.png)
 
