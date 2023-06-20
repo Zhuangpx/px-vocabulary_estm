@@ -2,7 +2,7 @@
  * @Autor: violet apricity ( Zhuangpx )
  * @Date: 2023-06-12 14:48:26
  * @LastEditors: violet apricity ( Zhuangpx )
- * @LastEditTime: 2023-06-20 15:47:06
+ * @LastEditTime: 2023-06-20 16:00:10
  * @FilePath: \px-vocabulary_estm\README.md
  * @Description:  Zhuangpx : Violet && Apricity:/ The warmth of the sun in the winter /
 -->
@@ -22,6 +22,36 @@ px-vocabulary_estimation (default:en)
 
 vocabulary estm (default:en) = 英语词汇量估算
 就是一个估算词汇量的东西，由于数据局限，面向的是国内学生（小-初-高-大学-cet-tem）。
+
+## 跑起来
+
+先创建数据库：
+
+```mysql
+CREATE DATABASE VE_test;
+```
+
+然后进行数据库预处理（`init.cpp`数据库登录提前换账号密码）：
+
+```c++
+g++ init.cpp -o init.exe -I/usr/include/mysql -L/usr/lib -lmysqlclient -lmysqlcppconn
+./init.exe
+```
+
+之后make一下：
+
+```c++
+make
+// make clean
+```
+
+再启动服务器，这里用py自带的cgi容器代替：
+
+```shell
+python3.8 -m http.server --cgi 8080
+```
+
+之后去访问首页(`http://localhost:8080/static/index.html`)就行了
 
 ## 要干些什么（提纲）
 
@@ -66,7 +96,7 @@ vocabulary estm (default:en) = 英语词汇量估算
 
 取数据集然后去重。
 
-只有一个表：
+只有一个：
 
 ![database](./image/database.png)
 
@@ -148,33 +178,3 @@ cpp->cgi，一些能用js写的地方直接拿cpp暴力改了~~（省力）~~。
 ## 批处理验证
 
 钦定实际词汇量为n，喂给算法得出估算值m，对比n和m。
-
-## 跑起来
-
-先创建数据库：
-
-```mysql
-CREATE DATABASE VE_test;
-```
-
-然后进行数据库预处理（`init.cpp`数据库登录提前换账号密码）：
-
-```c++
-g++ init.cpp -o init.exe -I/usr/include/mysql -L/usr/lib -lmysqlclient -lmysqlcppconn
-./init.exe
-```
-
-之后make一下：
-
-```c++
-make
-// make clean
-```
-
-再启动服务器，这里用py自带的cgi容器代替：
-
-```shell
-python3.8 -m http.server --cgi 8080
-```
-
-之后去访问首页(`http://localhost:8080/static/index.html`)就行了
