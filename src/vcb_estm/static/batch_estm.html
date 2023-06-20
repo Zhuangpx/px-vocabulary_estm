@@ -1,0 +1,67 @@
+<!--
+ * @Autor: violet apricity ( Zhuangpx )
+ * @Date: 2023-06-12 23:30:49
+ * @LastEditors: violet apricity ( Zhuangpx )
+ * @LastEditTime: 2023-06-19 20:14:24
+ * @FilePath: \px-vocabulary_estm\src\vcb_estm\static\batch_estm.html
+ * @Description:  Zhuangpx : Violet && Apricity:/ The warmth of the sun in the winter /
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>词汇估算工具</title>
+  <style>
+    body {
+      background: linear-gradient(to bottom right, #f8d9b7, #f1a7a5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: "楷体", "KaiTi", cursive;
+    }
+
+    .container {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    form {
+      text-align: center;
+    }
+
+    input[type="radio"] {
+      margin: 0 10px;
+    }
+
+    input[type="submit"] {
+      padding: 8px 16px;
+      font-size: 16px;
+      background-color: #ffffff;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h2>上传批测文件</h2>
+    <p>文件格式：只包含英文单词的文本文件，每行一个单词</p>
+    <form action="../cgi-bin/batch_estm.cgi" method="post" enctype="multipart/form-data">
+      <p>文件：<input type="file" name="Batch_file" /></p>
+      <p><input type="submit" value="上传" /></p>
+    </form>
+  </div>
+</body>
+
+</html>

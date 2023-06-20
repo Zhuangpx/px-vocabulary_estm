@@ -1,22 +1,12 @@
 <!--
  * @Autor: violet apricity ( Zhuangpx )
- * @Date: 2023-06-12 14:48:26
+ * @Date: 2023-06-12 14:50:39
  * @LastEditors: violet apricity ( Zhuangpx )
- * @LastEditTime: 2023-06-20 15:47:06
- * @FilePath: \px-vocabulary_estm\README.md
+ * @LastEditTime: 2023-06-20 15:01:54
+ * @FilePath: \px-vocabulary_estm\plan.md
  * @Description:  Zhuangpx : Violet && Apricity:/ The warmth of the sun in the winter /
 -->
-<!--
- * @Autor: violet apricity ( Zhuangpx )
- * @Date: 2023-06-12 14:48:26
- * @LastEditors: violet apricity ( Zhuangpx )
- * @LastEditTime: 2023-06-20 15:43:59
- * @FilePath: \px-vocabulary_estm\README.md
- * @Description:  Zhuangpx : Violet && Apricity:/ The warmth of the sun in the winter /
--->
-# px-vcb_estm
-
-px-vocabulary_estimation (default:en)
+# plan
 
 ## 这是个啥
 

@@ -1,0 +1,237 @@
+<!--
+ * @Autor: violet apricity ( Zhuangpx )
+ * @Date: 2023-06-12 23:46:53
+ * @LastEditors: violet apricity ( Zhuangpx )
+ * @LastEditTime: 2023-06-19 23:28:59
+ * @FilePath: \px-vocabulary_estm\src\vcb_estm\static\estm_profile.html
+ * @Description:  Zhuangpx : Violet && Apricity:/ The warmth of the sun in the winter /
+-->
+
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>词汇估算工具</title>
+  <style>
+    body {
+      background: linear-gradient(to bottom right, #f8d9b7, #f1a7a5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: "楷体", "KaiTi", cursive;
+      margin: 0;
+    }
+
+    .container {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h1 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    form {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    input[type="text"] {
+      padding: 5px;
+    }
+
+    input[type="text"]::placeholder {
+      /* background-color: rgba(0, 0, 0, 0.1); */
+      color: #ccc;
+      /* 浅灰色文本颜色 */
+    }
+
+    input[type="submit"] {
+      padding: 8px 16px;
+      font-size: 16px;
+      background-color: #ffffff;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>开始之前完善一下信息</h1>
+    <form action="../cgi-bin/single_estm_init.cgi" method="post">
+      <p>
+        <label>名字: </label>
+        <input size="40" type="text" name="Name" placeholder="姓名或者代号" />
+      </p>
+      <p>
+        <label>CET-4: </label>
+        <input size="40" type="text" name="Cet_4" placeholder="#四级成绩[0-710] 没有可不写"
+          pattern="^(?:[0-9]|[1-9][0-9]{0,1}|[1-6][0-9]{2}|70[0-9]|710)$" title="只能输入数字" />
+      </p>
+      <p>
+        <label>CET-6: </label>
+        <input size="40" type="text" name="Cet_6" placeholder="#六级成绩[0-710] 没有可不写"
+          pattern="^(?:[0-9]|[1-9][0-9]{0,1}|[1-6][0-9]{2}|70[0-9]|710)$" title="只能输入数字" />
+      </p>
+      <p>
+        <p>勾选词汇</p>
+        <input type="checkbox" name="Check_box_1" value="Elem_vcb" >小学词汇
+        <input type="checkbox" name="Check_box_2" value="Midd_vcb" >初中词汇
+        <br>
+        <input type="checkbox" name="Check_box_3" value="High_vcb" >高中词汇
+        <input type="checkbox" name="Check_box_4" value="Coll_vcb" >大学词汇
+        <br>
+        <input type="checkbox" name="Check_box_5" value="Cet4_vcb" >四级词汇
+        <input type="checkbox" name="Check_box_6" value="Cet6_vcb" >六级词汇
+        <br>
+        <input type="checkbox" name="Check_box_7" value="Tem4_vcb" >专四词汇
+        <input type="checkbox" name="Check_box_8" value="Tem6_vcb" >专八词汇
+      </p>
+      <p>
+        <input type="submit" value="提交" />
+      </p>
+    </form>
+  </div>
+</body>
+
+</html> -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>词汇估算工具</title>
+  <style>
+    body {
+      background: linear-gradient(to bottom right, #f8d9b7, #f1a7a5);
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 100vh;
+      font-family: "楷体", "KaiTi", cursive;
+    }
+
+    .container {
+      background-color: #ffffff;
+			box-shadow: 5px 5px 10px 5px rgba(0,0,0,.3);
+      border-radius: 5px;
+      width: 500px;
+			margin-bottom: 50px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+		.container>div{
+			color: #f1a7a5;
+			font-size: 60px;
+			margin: 20px 10px;
+			border-bottom: 1px solid #eee;
+		}
+    		.container .pb{
+			padding-bottom: 20px;
+		}
+    .container .res{
+      font-size: 30px;
+      font-weight: bold;
+    }
+    h1 {
+      text-align: center;
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    form {
+      text-align: center;
+    }
+
+    input[type="radio"] {
+      margin: 0 10px;
+    }
+
+    input[type="submit"] {
+			padding: 8px 16px;
+			font-size: 16px;
+			/* background-color: #f1a7a5; */
+			border: none;
+			cursor: pointer;
+			background: linear-gradient(to bottom right,  #f1a7a5,#f8d9b7);
+			border-radius: 5px;
+		}
+    		.psize2{
+			font-size:20px;
+			font-weight: bold;
+		}
+    button{
+      padding: 8px 16px;
+			font-size: 16px;
+      border: none;
+			cursor: pointer;
+			background: linear-gradient(to bottom right,  #f1a7a5,#f8d9b7);
+			border-radius: 3px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>开始之前完善一下信息</h1>
+    <form action="../cgi-bin/single_estm_init.cgi" method="post">
+      <p>
+        <label>名字: </label>
+        <input size="40" type="text" name="Name" placeholder="姓名或者代号" />
+      </p>
+      <p>
+        <label>CET-4: </label>
+        <input size="40" type="text" name="Cet_4" placeholder="#四级成绩[0-710] 没有可不写"
+          pattern="^(?:[0-9]|[1-9][0-9]{0,1}|[1-6][0-9]{2}|70[0-9]|710)$" title="只能输入数字" />
+      </p>
+      <p>
+        <label>CET-6: </label>
+        <input size="40" type="text" name="Cet_6" placeholder="#六级成绩[0-710] 没有可不写"
+          pattern="^(?:[0-9]|[1-9][0-9]{0,1}|[1-6][0-9]{2}|70[0-9]|710)$" title="只能输入数字" />
+      </p>
+      <p class="range">
+        <p>勾选词汇</p>
+        <input type="checkbox" id="Check_box_1" name="Check_box_1" value="Elem_vcb" ><label for="Check_box_1">小学词汇</label>
+        <input type="checkbox" id="Check_box_2" name="Check_box_2" value="Midd_vcb" ><label for="Check_box_2">初中词汇</label>
+        <br>
+        <input type="checkbox"  id="Check_box_3" name="Check_box_3" value="High_vcb" ><label for="Check_box_3">高中词汇</label>
+        <input type="checkbox"  id="Check_box_4" name="Check_box_4" value="Coll_vcb" ><label for="Check_box_4">大学词汇</label>
+        <br>
+        <input type="checkbox"  id="Check_box_5" name="Check_box_5" value="Cet4_vcb" ><label for="Check_box_5">四级词汇</label>
+        <input type="checkbox"  id="Check_box_6" name="Check_box_6" value="Cet6_vcb" ><label for="Check_box_6">六级词汇</label>
+        <br>
+        <input type="checkbox"  id="Check_box_7" name="Check_box_7" value="Tem4_vcb" ><label for="Check_box_7">专四词汇</label>
+        <input type="checkbox"  id="Check_box_8" name="Check_box_8" value="Tem6_vcb" ><label for="Check_box_8">专八词汇</label>
+      </p>
+      <p>
+        <input type="submit" value="提交" />
+      </p>
+    </form>
+  </div>
+  <script>
+    const iptcb=document.querySelectorAll('input[type="checkbox"]')
+    console.log(iptcb);
+    for(let i=0;i<iptcb.length;i++){
+      iptcb[i].addEventListener('click', function(){
+        if(iptcb[i].checked){
+          for(let j=0;j<=i;j++){
+            iptcb[j].checked=true
+          }
+        }else{
+          for(let j=i;j<iptcb.length;j++){
+            iptcb[j].checked=false
+          }
+        }
+      })
+    }
+  </script>
+</body>
+
+</html>

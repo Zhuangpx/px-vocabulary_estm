@@ -1,0 +1,183 @@
+<!--
+ * @Autor: violet apricity ( Zhuangpx )
+ * @Date: 2023-06-14 16:04:39
+ * @LastEditors: violet apricity ( Zhuangpx )
+ * @LastEditTime: 2023-06-20 00:06:24
+ * @FilePath: \px-vocabulary_estm\src\vcb_estm\static\single_estm_result.html
+ * @Description:  Zhuangpx : Violet && Apricity:/ The warmth of the sun in the winter /
+-->
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>词汇估算工具</title>
+  <style>
+    body {
+      background: linear-gradient(to bottom right, #f8d9b7, #f1a7a5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: "楷体", "KaiTi", cursive;
+    }
+
+    .container {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    form {
+      text-align: center;
+    }
+
+    input[type="radio"] {
+      margin: 0 10px;
+    }
+
+    input[type="submit"] {
+      padding: 8px 16px;
+      font-size: 16px;
+      background-color: #ffffff;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>估算结果</h1>
+    <form>
+        <p>你的英语词汇量约为 {Vcb_size}</p>
+        <p>所选词汇：</p>
+        <input type="checkbox" name="Check_box_1" value="Elem_vcb" disabled {Check_op0} >小学词汇
+        <input type="checkbox" name="Check_box_2" value="Midd_vcb" disabled {Check_op1} >初中词汇
+        <br>
+        <input type="checkbox" name="Check_box_3" value="High_vcb" disabled {Check_op2} >高中词汇
+        <input type="checkbox" name="Check_box_4" value="Coll_vcb" disabled {Check_op3} >大学词汇
+        <br>
+        <input type="checkbox" name="Check_box_5" value="Cet4_vcb" disabled {Check_op4} >四级词汇
+        <input type="checkbox" name="Check_box_6" value="Cet6_vcb" disabled {Check_op5} >六级词汇
+        <br>
+        <input type="checkbox" name="Check_box_7" value="Tem4_vcb" disabled {Check_op6} >专四词汇
+        <input type="checkbox" name="Check_box_8" value="Tem6_vcb" disabled {Check_op7} >专八词汇
+        <p>你的信息</p>
+        <p>名字：{Name}</p>
+        <p>CET-4：{Cet_4} CET-6：{Cet_6}</p>
+    </form>
+    <button onclick="window.location.href='../static/index.html'">返回首页</button>
+</div>
+</body>
+
+</html> -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>词汇估算工具</title>
+  <style>
+    body {
+      background: linear-gradient(to bottom right, #f8d9b7, #f1a7a5);
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 100vh;
+      font-family: "楷体", "KaiTi", cursive;
+    }
+
+    .container {
+      background-color: #ffffff;
+			box-shadow: 5px 5px 10px 5px rgba(0,0,0,.3);
+      border-radius: 5px;
+      width: 500px;
+			margin-bottom: 50px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+		.container>div{
+			color: #f1a7a5;
+			font-size: 60px;
+			margin: 20px 10px;
+			border-bottom: 1px solid #eee;
+		}
+    		.container .pb{
+			padding-bottom: 20px;
+		}
+    .container .res{
+      font-size: 30px;
+      font-weight: bold;
+    }
+    h1 {
+      text-align: center;
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    form {
+      text-align: center;
+    }
+
+    input[type="radio"] {
+      margin: 0 10px;
+    }
+
+    input[type="submit"] {
+      padding: 8px 16px;
+      font-size: 16px;
+      background-color: #ffffff;
+      border: none;
+      cursor: pointer;
+    }
+    		.psize2{
+			font-size:20px;
+			font-weight: bold;
+		}
+    button{
+      padding: 8px 16px;
+			font-size: 16px;
+      border: none;
+			cursor: pointer;
+			background: linear-gradient(to bottom right,  #f1a7a5,#f8d9b7);
+			border-radius: 3px;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>估算结果</h1>
+    <form>
+        <p>你的英语词汇量约为 {Vcb_size}</p>
+        <p>所选词汇：</p>
+        <input type="checkbox" name="Check_box_1" value="Elem_vcb" disabled {Check_op0} >小学词汇
+        <input type="checkbox" name="Check_box_2" value="Midd_vcb" disabled {Check_op1} >初中词汇
+        <br>
+        <input type="checkbox" name="Check_box_3" value="High_vcb" disabled {Check_op2} >高中词汇
+        <input type="checkbox" name="Check_box_4" value="Coll_vcb" disabled {Check_op3} >大学词汇
+        <br>
+        <input type="checkbox" name="Check_box_5" value="Cet4_vcb" disabled {Check_op4} >四级词汇
+        <input type="checkbox" name="Check_box_6" value="Cet6_vcb" disabled {Check_op5} >六级词汇
+        <br>
+        <input type="checkbox" name="Check_box_7" value="Tem4_vcb" disabled {Check_op6} >专四词汇
+        <input type="checkbox" name="Check_box_8" value="Tem6_vcb" disabled {Check_op7} >专八词汇
+        <!-- <p>你的信息</p> -->
+        <p>名字：{Name}</p>
+        <p>CET-4：{Cet_4} CET-6：{Cet_6}</p>
+    </form>
+    <button onclick="window.location.href='../static/index.html'">返回首页</button>
+</div>
+</body>
+</html>

@@ -1,0 +1,9 @@
+CREATE TABLE table_name (word char(50)) engine=InnoDB;
+
+DROP TABLE table_elem, table_midd, table_high, table_coll, table_cet4, table_cet6, table_tem4, table_tem8;
+
+select * from table_elem;
+
+INSERT INTO table_elem VALUES ('aaa');
+
+DELETE FROM table_midd WHERE word IN ( SELECT word FROM table_elem );

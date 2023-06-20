@@ -1,0 +1,166 @@
+<!--
+ * @Autor: violet apricity ( Zhuangpx )
+ * @Date: 2023-06-12 23:30:38
+ * @LastEditors: violet apricity ( Zhuangpx )
+ * @LastEditTime: 2023-06-19 23:42:42
+ * @FilePath: \px-vocabulary_estm\src\vcb_estm\static\single_estm.html
+ * @Description:  Zhuangpx : Violet && Apricity:/ The warmth of the sun in the winter /
+-->
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>词汇估算工具</title>
+  <style>
+    body {
+      background: linear-gradient(to bottom right, #f8d9b7, #f1a7a5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: "楷体", "KaiTi", cursive;
+    }
+
+    .container {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    form {
+      text-align: center;
+    }
+
+    input[type="radio"] {
+      margin: 0 10px;
+    }
+
+    input[type="submit"] {
+      padding: 8px 16px;
+      font-size: 16px;
+      background-color: #ffffff;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>词汇估算工具</h1>
+    <form action="../cgi-bin/single_estm.cgi" method="post">
+      <p>Problem{Cnt_now}/{Cnt_tot}你是否认识单词"{Word}"</p>
+      <p>
+        <label><input type="radio" name="Word_op" value="Yes" />认识</label>
+        <label><input type="radio" name="Word_op" value="No" />不认识</label>
+      </p>
+      <p><input type="submit" value="{Submit_op}" /></p>
+    </form>
+  </div>
+</body>
+
+</html> -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>词汇估算工具</title>
+  <style>
+    body {
+      background: linear-gradient(to bottom right, #f8d9b7, #f1a7a5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: "楷体", "KaiTi", cursive;
+    }
+
+    .container {
+      background-color: #ffffff;
+      box-shadow: 5px 5px 10px 5px rgba(0,0,0,.3);
+      border-radius: 5px;
+      width: 500px;
+      margin-bottom: 50px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .container>div{
+      color: #f1a7a5;
+      font-size: 50px;
+      margin: 20px 10px;
+      border-bottom: 1px solid #eee;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    form {
+      text-align: center;
+    }
+
+    input[type="radio"] {
+      margin: 0 10px;
+    }
+
+    input[type="submit"] {
+      padding: 8px 16px;
+      font-size: 16px;
+      background: linear-gradient(to bottom right, #f8d9b7, #f1a7a5);
+      border-radius: 3px;
+      border: none;
+      cursor: pointer;
+    }
+    .word{
+      font-size: 30px;
+      font-weight: 700;
+    }
+  </style>
+  <script>
+    function validateForm() {
+      var radios = document.getElementsByName("Word_op");
+      var checked = false;
+      for (var i = 0; i < radios.length; i++) {
+        if (radios[i].checked) {
+          checked = true;
+          break;
+        }
+      }
+      if (!checked) {
+        alert("请选择一个选项");
+        return false;
+      }
+      return true;
+    }
+  </script>
+</head>
+
+<body>
+  <div class="container">
+    <div>词汇估算工具</div>
+    <form action="../cgi-bin/single_estm.cgi" method="post" onsubmit="return validateForm();">
+      <p>Problem{Cnt_now}/{Cnt_tot}你是否认识单词</p>
+      <p class="word">"{Word}"</p>
+      <p>
+        <label><input type="radio" name="Word_op" value="Yes" />认识</label>
+        <label><input type="radio" name="Word_op" value="No" />不认识</label>
+      </p>
+      <p><input type="submit" value="{Submit_op}" /></p>
+    </form>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,159 @@
+<!--
+ * @Autor: violet apricity ( Zhuangpx )
+ * @Date: 2023-06-12 21:33:58
+ * @LastEditors: violet apricity ( Zhuangpx )
+ * @LastEditTime: 2023-06-19 23:26:54
+ * @FilePath: \px-vocabulary_estm\src\vcb_estm\static\index.html
+ * @Description:  Zhuangpx : Violet && Apricity:/ The warmth of the sun in the winter /
+-->
+
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<title>词汇估算工具</title>
+	<style>
+		body {
+			background: linear-gradient(to bottom right, #f8d9b7, #f1a7a5);
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+			font-family: "楷体", "KaiTi", cursive;
+		}
+
+		.container {
+			text-align: center;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		h1 {
+			text-align: center;
+			font-size: 36px;
+			margin-bottom: 20px;
+		}
+
+		form {
+			text-align: center;
+		}
+
+		input[type="radio"] {
+			margin: 0 10px;
+		}
+
+		input[type="submit"] {
+			padding: 8px 16px;
+			font-size: 16px;
+			background-color: #ffffff;
+			border: none;
+			cursor: pointer;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<h1>词汇估算工具</h1>
+		<form action="../cgi-bin/index.cgi" method="post">
+			<p>选择测试方式</p>
+			<p>
+				<label><input type="radio" name="estm_op" value="Single" />单测</label>
+				<label><input type="radio" name="estm_op" value="Batch" />批测</label>
+			</p>
+			<p><input type="submit" value="开始测试" /></p>
+		</form>
+	</div>
+</body>
+
+</html> -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<title>词汇估算工具</title>
+	<style>
+		body {
+			background: linear-gradient(to bottom right, #f8d9b7, #f1a7a5);
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+			height: 100vh;
+			font-family: "楷体", "KaiTi", cursive;
+		}
+
+		.container {
+			background-color: #ffffff;
+			box-shadow: 5px 5px 10px 5px rgba(0,0,0,.3);
+			border-radius: 5px;
+			width: 500px;
+			margin-bottom: 50px;
+			text-align: center;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+
+		}
+
+		h1 {
+			text-align: center;
+			font-size: 36px;
+			margin-bottom: 20px;
+		}
+
+		form {
+			text-align: center;
+		}
+
+		input[type="radio"] {
+			margin: 0 10px;
+		}
+
+		input[type="submit"] {
+			padding: 8px 16px;
+			font-size: 16px;
+			/* background-color: #f1a7a5; */
+			border: none;
+			cursor: pointer;
+			background: linear-gradient(to bottom right,  #f1a7a5,#f8d9b7);
+			border-radius: 5px;
+		}
+		.container>div{
+			color: #f1a7a5;
+			font-size: 70px;
+			margin: 20px 10px;
+			border-bottom: 1px solid #eee;
+		}
+		.psize2{
+			font-size:20px;
+			font-weight: bold;
+		}
+		.container p{
+			padding-bottom: 20px;
+		}
+	</style>
+</head>
+
+<body>
+	<!-- <div class="img-container">
+		<img src="./img/index.png" alt="">
+	</div> -->
+	<div class="container">
+		<div>词汇估算工具</div>
+		<form action="../cgi-bin/index.cgi" method="post">
+			<p class="psize2">选择测试方式</p>
+			<p>
+				<label><input type="radio" name="estm_op" value="Single" />单测</label>
+				<label><input type="radio" name="estm_op" value="Batch" />批测</label>
+			</p>
+			<p><input type="submit" value="开始测试" /></p>
+		</form>
+	</div>
+</body>
+
+</html>
+
