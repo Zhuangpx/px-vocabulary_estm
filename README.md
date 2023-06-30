@@ -2,7 +2,7 @@
  * @Autor: violet apricity ( Zhuangpx )
  * @Date: 2023-06-12 14:48:26
  * @LastEditors: violet apricity ( Zhuangpx )
- * @LastEditTime: 2023-06-20 16:00:10
+ * @LastEditTime: 2023-06-30 20:51:15
  * @FilePath: \px-vocabulary_estm\README.md
  * @Description:  Zhuangpx : Violet && Apricity:/ The warmth of the sun in the winter /
 -->
@@ -178,3 +178,31 @@ cpp->cgi，一些能用js写的地方直接拿cpp暴力改了~~（省力）~~。
 ## 批处理验证
 
 钦定实际词汇量为n，喂给算法得出估算值m，对比n和m。
+
+## 一些成品图
+
+![1](./image/1.png)
+
+![2](./image/2.png)
+
+![3](./image/3.png)
+
+![4](./image/4.png)
+
+![5](./image/5.png)
+
+![6](./image/6.png)
+
+![7](./image/7.png)
+
+![8](./image/8.png)
+
+![9](./image/9.png)
+
+![0](./image/10.png)
+
+![11](./image/11.png)
+
+![13](./image/13.png)
+
+![14](./image/14.png)
